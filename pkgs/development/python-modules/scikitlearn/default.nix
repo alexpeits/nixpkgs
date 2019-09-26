@@ -4,7 +4,7 @@
 , fetchPypi
 , fetchpatch
 , gfortran, glibcLocales
-, numpy, scipy, pytest, pillow
+, numpy, scipy, pytest, pillow, setuptools
 , cython
 , joblib
 , llvmPackages
@@ -38,6 +38,7 @@ buildPythonPackage rec {
     scipy
     numpy.blas
     joblib
+    setuptools
   ];
   checkInputs = [ pytest ];
 
